@@ -1,14 +1,15 @@
 #include <stdio.h>// Thư viện
 int main(){
-    //printf("hello world\n");//Xuat ra man hinh Hello world
-    //printf("Hello World");
     int a,b;
-    char ten[10];
-    printf("nhap a va b:");
 
-    scanf("%d%d",&a,&b);
-    printf("nhap vao ten toi");
-    scanf("%s", &ten);
+    printf("\nNhap vao a va b: ");
+    scanf("%d%d", &a, &b);
+   
+    int tong = a + b;
+    int hieu = a - b;
+ 
+    printf("tong cua 2 so: %d",tong);
+    printf("hieu cua 2 so: %d",hieu);
     return 0;
 }
 
