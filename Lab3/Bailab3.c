@@ -86,16 +86,25 @@ int main() {
             printf("Nhap so dien: ");
             scanf("%d", &sodien);
 
-            int tienthue;
-            if (sodien <= 50)
-                tienthue = sodien * 1000;
+            int tiendien;
+            int a = sodien;
+            if (a <= 50)
+                tiendien = sodien * 1678;
+            else if (a <=100)
+                tiendien = sodien * 1734;
+            else if( a <=200)
+                tiendien = sodien*2014;
+            else if( a<=300)
+                tiendien = sodien*2536;
+            else if( a <=400)  
+                tiendien = sodien*2834;
             else
-                tienthue = 50 * 1000 + (sodien - 50) * 1200;
+                tiendien = sodien*2927;
 
-            printf("Tien dien: %d VND\n", tienthue);
+            printf("Tien dien: %d VND\n", tiendien);
             break;
-        }
 
+         }
         case 0:
             printf("Thoat chuong trinh...\n");
             exit(0);
