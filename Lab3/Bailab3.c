@@ -108,7 +108,6 @@ int main() {
         case 0:
             printf("Thoat chuong trinh...\n");
             exit(0);
-
         default:
             printf("Lua chon khong hop le! Moi nhap lai\n");
             break;
