@@ -72,8 +72,10 @@
                 }
                     printf("So nhi phan: ");
                 for (int j = i - 1; j >= 0; j--) {
-                    printf("%d", binary[j]);    
+                    printf("%d ", binary[j]);
                 }
+                    printf("\n");
+                
     }           
 
 int main() {
@@ -81,7 +83,7 @@ int main() {
     do {
         printf("________________________________________\n");
         printf("| WELCOME TO NGUYENQUOCVIET BAITAPLAB4 |\n");
-        printf("----------- Menu -----------\n");
+        printf("----------------- Menu -----------------\n");
         printf("1. Tinh trung binh tong cac so tu nhien chia het cho 2 \n");
         printf("2. Xac dinh so nguyen to \n");
         printf("3. xac dinh so chinh phuong \n");

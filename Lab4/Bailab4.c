@@ -16,7 +16,7 @@ int main() {
         scanf("%d", &luachon);
 
         switch (luachon) {
-        case 1: {
+        case 1:void tinhtbsochan {
             int min, max;
             printf("Nhap min: ");
             scanf("%d", &min);
@@ -39,7 +39,7 @@ int main() {
                 }
             break;
             }
-        case 2: {
+        case 2: void kiemtrasnt {
             int n, i, a=0;
             printf("Nhap n: ");
             scanf("%d", &n);
@@ -56,7 +56,7 @@ int main() {
             }
             break;
             }
-        case 3: {
+        case 3: void kiemtrascp {
             int n, i;
             int a = 0;
             printf("Nhap n: ");

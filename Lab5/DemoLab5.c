@@ -28,13 +28,13 @@ void Tinhnamnhuan() {
     }
 }
 void swap(){
-int *a, *b;
+int a, b;
     printf("Nhap a va b: ");
     scanf("%d %d", &a, &b);
-
-    int temp = a;
-    a = b;
-    b = temp;
+    int temp;
+        temp=a;
+        a = b;
+        b=temp;
         printf("a sau khi hoan vi la :%d\nb sau khi hoan vi la :%d\n",a,b);
 }
 int main() {
