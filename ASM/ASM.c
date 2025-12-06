@@ -2,6 +2,24 @@
 #include <math.h>
 #include <stdlib.h>
 
+void kiemtrasonguyen() {
+    float x,i,z;
+    printf("Nhap so can kiem tra: ");
+    scanf("%f \n", x);
+    if(int(x) == x){
+        printf("%.f la so nguyen.\n",x);
+    }
+    for(i=2; i<x/2; i++){
+        if(x%i==0){
+            a++;
+            }
+        }
+        if(a==0){
+            printf("%d la so nguyen to",x);
+        }
+        else if()
+
+
 int main() {
     int luachon;
     do {

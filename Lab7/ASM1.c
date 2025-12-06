@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
-int main(){
+#include <stdlib.h>
     /*int tuoi;
     char str1[20], str2[20];
     printf("Nhap tuoi: ");
@@ -39,14 +38,15 @@ int main(){
    void demnguyenamphuam(){
    char s[100];
    printf("Xin moi nhap chuoi:");
-   gets(s);
+   fgets(s);
    int i=0, n=0, p=0;
-        while(s[i++] != '\0'){
+        while(s[i] != '\0'){
             if(s[i] == 'a' || s[i] == 'i' || s[i] == 'e' || s[i] == 'o' || s[i] == 'u'){
                 n++;
             }else{
                 p++;
             }
+            i++;
         }
         printf("Chuoi '%s' co chua : %d nguyen am va %d phu am.", s, n, p);  
    }
@@ -55,10 +55,19 @@ int main(){
     int passSys = 12345;
     char user[100];
     int pass;
-    print("Ten dang nhap: ");
-    gets(user);
+    printf("Ten dang nhap: ");
+    fgets(user);
     printf("Nhap mat khau :");
     scanf("%d", &pass);
-    
-   }
+    if(strcmp(userSys, user) == 0 && passSys == pass){
+        printf("Dang nhap thanh cong");
+    }
+        else{
+            printf("Dang nhap that bai");
+            }
+        }
+int main(){
+    demnguyenamphuam();
+    dangnhap();
+    return 0;
 }
