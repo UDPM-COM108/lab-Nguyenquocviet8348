@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "C Build",
+            "type": "shell",
+            // Sử dụng đường dẫn đến gcc.exe bạn đã cung cấp
+            "command": "C:/msys64/ucrt64/bin/gcc.exe", 
+            "args": [
+                // Tham số biên dịch cơ bản
+                "-Wall", 
+                "-Wextra",
+                "-g3",
+                
+                // Tệp đầu vào: Biên dịch tệp đang mở
+                "${file}",
+                
+                // Cờ -o để chỉ định tệp đầu ra
+                "-o",
+                
+                // Tên tệp đầu ra: Đặt trong thư mục 'output' và có cùng tên với tệp nguồn, nhưng với đuôi .exe
+                "${fileDirname}/output/${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                // Tùy chọn để đảm bảo thư mục 'output' tồn tại trước khi biên dịch
+                "cwd": "${fileDirname}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": "$gcc"
+        }
+    ]
+}
